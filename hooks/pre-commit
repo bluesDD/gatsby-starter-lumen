@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "pre-commit hooked"
+target=\\.md
+
+DIFF=$(git diff --name-only --cached | grep $target )
+
+echo $DIFF
