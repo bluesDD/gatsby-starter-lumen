@@ -3,6 +3,9 @@
 echo "pre-commit hooked"
 target=\\.md
 
-DIFF=$(git diff --name-only --cached | grep $target )
+commited_md=$(git diff --name-only --cached | grep $target )
 
-echo $DIFF
+committed_date=$(date -u "+%Y-%m-%dT%H:%M:%S")
+
+
+echo $commited_md
