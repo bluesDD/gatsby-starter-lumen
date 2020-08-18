@@ -7,5 +7,8 @@ commited_md=$(git diff --name-only --cached | grep $target )
 
 committed_date=$(date -u "+%Y-%m-%dT%H:%M:%S")
 
+target_date=$(cat $commited_md | awk '/date:/' | awk '{print $2}')
 
-echo $commited_md
+sed -i -e "s/${target_date}/\"${committed_date}\"/g" $commited_md
+
+git add $commited_md
