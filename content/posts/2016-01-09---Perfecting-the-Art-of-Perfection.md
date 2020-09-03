@@ -1,12 +1,11 @@
 ---
 title: DNS再入門
-date: "2020-08-18T16:05:36"
+date: "2020-09-03T14:17:49"
 template: "post"
 draft: false
 slug: "basic-dns"
 tags:
   - "DNS"
-  - "Learning to write"
 socialImage: "/media/image-2.jpg"
 description: "基本的なDNSの動作について"
 category: "DNS"
